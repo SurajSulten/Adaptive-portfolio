@@ -406,12 +406,22 @@ body {
     }
 }
 .season_name {
-    font-family: Inter;
+    /* font-family: Inter;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 40px;
     color: #BDAE82;
+    text-decoration: none; */
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
+    background-color: transparent;
+    color: #BDAE82;
+    max-width: 220px;
+    text-align: center;
 }
 .seasons_item_autumn {
     background-color: #BDAE82;
@@ -419,6 +429,7 @@ body {
     width: 220px;
     text-align: center;
     align-items: center ;
+    
 }
 .season_name_autumn {
     font-family: Inter;
@@ -427,6 +438,7 @@ body {
     font-size: 20px;
     line-height: 40px;
     color: #000;
+    background-color: transparent;
 }
 .portfolio_images {
     display: flex;

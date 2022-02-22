@@ -14,24 +14,28 @@ far.addEventListener("click",function(e){
     navList.style.display='none';
     far.style.display='none';
 })
+const portfolioBtn = document.querySelector('.portfolio_btn')
+const portfolioImages = document.querySelectorAll('portfolio_img')
+portfolioBtn.addEventListener('click', () => {
+  portfolioImages.forEach((img, index) => img.src = `./assets/img/winter/${index + 1}.jpg`)
+})
+// const elements = document.querySelectorAll('.change-lang');
 
-const elements = document.querySelectorAll('.change-lang');
+// const i18Obj = {
+//     'en': {
+//       'skill-text-1': 'High-quality photos in the studio and on the nature',
+//       'winter': "winter"
+//     },
+//     'ru' : {
+//       'skill-text-1': 'Высококачественные фото в студии и на природе',
+//       "winter": "зима"
+//     }
+//   }
 
-const i18Obj = {
-    'en': {
-      'skill-text-1': 'High-quality photos in the studio and on the nature',
-      'winter': "winter"
-    },
-    'ru' : {
-      'skill-text-1': 'Высококачественные фото в студии и на природе',
-      "winter": "зима"
-    }
-  }
-
-  function changeLang (language){
-    elements.forEach((elem) => {
-        const elemId = elem.id;
-        elem.textContent = i18Obj[language][elemId];
-    })
-  }
-changeLang("ru")
+//   function changeLang (language){
+//     elements.forEach((elem) => {
+//         const elemId = elem.id;
+//         elem.textContent = i18Obj[language][elemId];
+//     })
+//   }
+// changeLang("ru")
