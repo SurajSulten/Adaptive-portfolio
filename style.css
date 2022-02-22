@@ -568,7 +568,7 @@ body {
     color: #000;  
 }
 .contact_body {
-    background: url(/assets/img/contacts2.jpg);
+    background: url(./assets/img/contacts2.jpg);
     width: 100%;
     display: flex;
     justify-content: end;
