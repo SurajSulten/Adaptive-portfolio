@@ -573,7 +573,7 @@ body {
     display: flex;
     justify-content: end;
     margin-top: 100px;
-}
+} 
 @media (max-width: 992px) {
     .contact_body {
         justify-content: center;
